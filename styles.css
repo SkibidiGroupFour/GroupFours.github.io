@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; 
+    color: #f5f5dc; 
+    line-height: 1.6;
+}
+
+.grpt4 {
+    display: flex;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.grpt4 a {
+    text-align: center;
+
+}
+
+.grpt4 img {
+    border-radius: 25px;
+
+}
+
+/* Navigation styles */
+.nav-wrapper {
+    background-color: #333; 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.container-for-footer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    height: auto;
+    margin: auto;
+}
+
+.foot-wrapper {
+    background-color: #333; 
+    padding: 10px 0;
+    position: relative;
+    bottom: -134px;
+    z-index: 99;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 1200px;
+    margin: auto;
+}
+
+.container-for-nav {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 24px;
+    color: #f5f5dc;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-menu li {
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.nav-menu a {
+    color: #f5f5dc;
+    text-decoration: none;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1); 
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+    font-size: 17.5px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+}
+
+/* Section styles */
+.section {
+    padding: 50px 0;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.activities-slide {
+    display: grid;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.activities-video {
+    display: flex;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.activities-item {
+    position: relative;
+    margin: 20px 0;
+    width: 250px;
+    height: auto;
+    text-decoration: none;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.activities-item:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); 
+}
+
+.activities-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.activities-item:hover img {
+    transform: scale(1.1); 
+}
+
+
+
+.activities-item-content {
+    position: relative; 
+    padding: 10px;
+    text-align: center;
+    z-index: 1; 
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 0 0 10px 10px;
+}
+
+.activities-item-title {
+    font-size: 20px;
+    color: #ffcc00; 
+    margin-top: 10px; 
+}
+
+.activities-infos {
+    margin-top: 5px;
+}
+
+.activities-info span {
+    font-size: 14px;
+    color: #f5f5dc;
+}
+
+/* Video slide styles */
+.video-slide-item {
+    position: relative;
+    margin: 20px 0;
+    height: auto;
+    width: 1000px;
+}
+
+.video-slide-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.video-slide-item:hover .overlay {
+    opacity: 0.7; 
+}
+
+.video-slide-item:hover .item-content-title {
+    font-size: 25px;
+}
+
+.video-slide-item:hover #timerz {
+    font-size: 20px;
+}
+
+.video-slide-item:hover .item-action {
+    font-size: 25px;
+}
+
+
+#timerz {
+    font-size: 15px;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+.item-content-title {
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+.item-content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #f5f5dc;
+}
+
+.item-action {
+    margin-top: 5px;
+    font-size: 20px;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    text-decoration: underline;
+}
+
+.item-action a {
+    color: #ffcc00 
+}
